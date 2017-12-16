@@ -29,7 +29,7 @@ class App extends Component {
           <div style={{ background: '#fff', padding: '50px', minHeight: '100vh' }}>
             <Switch>
               <Route exact path='/' component={Home} />
-              <Route path='/schedule/:date' component={Schedule} />
+              <Route path='/schedule/:date?' component={Schedule} />
               <Route path='/about' component={About} />
             </Switch>
           </div>
