@@ -9,20 +9,21 @@ export default class Schedule extends Component {
     };
 
     componentDidMount() {
-        const date = parseInt(this.props.match.params.date, 10)
-        this.setState((prevState) => {
-            return {
-                ...prevState,
-                date,
-            };
-        });
+        if (this.props.match.params.date) {
+            const date = parseInt(this.props.match.params.date);
+            this.setState((prevState) => {
+                return {
+                    ...prevState,
+                    date,
+                };
+            });
+        }
     }
 
     render() {
         return (
             <div>
-                <h1>{ this.state.date }</h1>
-                <Calendar value={moment(`2017-01-${this.state.date}`)}/>
+                <Calendar value={moment(`2017-01-${this.state.date}`)} />
             </div>
         )
     }
