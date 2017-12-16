@@ -4,6 +4,6 @@ This project is a tutorial of react app with react-router. You should clone and 
 
 ```bash
 $ git clone https://github.com/oakraw/react-router-tutorial.git
-$ yarn add
+$ yarn
 $ yarn start
 ```
